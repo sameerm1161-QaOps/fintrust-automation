@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/sameerm1161-QaOps/fintrust-automation.git'
+                git branch: 'main', url: 'https://github.com/sameerm1161-QaOps/fintrust-automation.git'
             }
         }
 
