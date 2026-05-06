@@ -15,7 +15,7 @@ public class BookingE2ETest {
 
         TransactionService service = new TransactionService();
 
-        // 🔥 CHANGE: Updated method name
-        service.completeBookingFlow(); // ✅ FIX
+
+        service.completeBookingFlow(); 
     }
 }

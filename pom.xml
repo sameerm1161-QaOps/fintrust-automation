@@ -92,6 +92,14 @@
                     <parallel>methods</parallel>
                     <threadCount>3</threadCount>
 
+                    <systemPropertyVariables>
+
+                        <allure.results.directory>
+                            /app/allure-results
+                        </allure.results.directory>
+
+                    </systemPropertyVariables>
+
                     <includes>
                         <include>**/*Runner.java</include>
                     </includes>

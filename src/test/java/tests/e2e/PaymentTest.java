@@ -10,6 +10,6 @@ public class PaymentTest {
 
         TransactionService service = new TransactionService();
 
-        service.completeBookingFlow(); // 🔥 Full flow
+        service.completeBookingFlow();
     }
 }

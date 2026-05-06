@@ -13,7 +13,7 @@ public class TransactionService {
 
         System.out.println("Thread: " + Thread.currentThread().getId());
 
-        // 🔥 CHANGE: Read from JSON instead of hardcode
+
         BookingRequest request = TestDataReader.getBookingData();
         request.setFirstname(DataGenerator.getRandomName());
 

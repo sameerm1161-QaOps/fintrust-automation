@@ -11,7 +11,7 @@ public class BookingService extends BaseApi {
 
     private static final Logger log = LoggerFactory.getLogger(BookingService.class);
 
-    // 🔥 CHANGE: Now accepts POJO instead of String
+
     public Response createBooking(BookingRequest request) {
 
         log.info("Creating booking with POJO...");

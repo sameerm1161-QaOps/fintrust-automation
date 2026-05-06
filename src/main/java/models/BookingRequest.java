@@ -1,6 +1,6 @@
 package models;
 
-// 🔥 NEW FILE (POJO)
+
 public class BookingRequest {
 
     private String firstname;

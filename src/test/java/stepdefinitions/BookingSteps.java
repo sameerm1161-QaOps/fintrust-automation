@@ -16,7 +16,6 @@ public class BookingSteps {
     @Given("user creates a booking")
     public void createBooking() {
 
-        // 🔥 CHANGE: Using POJO instead of raw JSON
         BookingDates dates = new BookingDates("2024-01-01", "2024-01-05");
 
         BookingRequest request = new BookingRequest(

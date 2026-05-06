@@ -1,6 +1,6 @@
 package models;
 
-// 🔥 NEW FILE (POJO)
+
 public class BookingDates {
 
     private String checkin;
