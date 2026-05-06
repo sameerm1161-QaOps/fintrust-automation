@@ -17,21 +17,19 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-               sh 'docker build -t fintrust-automation .'
+               bat 'docker build -t fintrust-automation .'
             }
         }
 
         stage('Run Automation Tests') {
             steps {
-                 sh 'docker run -v %cd%/allure-results:/app/allure-results fintrust-automation'
+                 bat 'docker run -v %cd%\\allure-results:/app/allure-results fintrust-automation'
             }
         }
 
         stage('Generate Allure Report') {
             steps {
-                allure includeProperties: false,
-                        jdk: '',
-                        results: [[path: 'allure-results']]
+                 bat 'allure serve allure-results'
             }
         }
     }
