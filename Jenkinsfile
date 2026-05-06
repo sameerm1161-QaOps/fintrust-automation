@@ -11,7 +11,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/YOUR_GITHUB_REPO.git'
+                git 'https://github.com/sameerm1161-QaOps/fintrust-automation.git'
             }
         }
 
