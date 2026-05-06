@@ -11,19 +11,19 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/sameerm1161-QaOps/fintrust-automation.git'
+                git branch: 'main', url: 'https://github.com/sameerm1161-QaOps/fintrust-automation.git'
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t fintrust-automation .'
+               sh 'docker build -t fintrust-automation .'
             }
         }
 
         stage('Run Automation Tests') {
             steps {
-                bat 'docker run --rm -v %cd%/allure-results:/app/allure-results fintrust-automation'
+                 sh 'docker run -v %cd%/allure-results:/app/allure-results fintrust-automation'
             }
         }
 
